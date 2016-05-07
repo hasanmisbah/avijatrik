@@ -8,6 +8,6 @@
 <ul>
   <li><a href="http://babar.im" target="_new">Al-amin babar</a></li>
   <li><a href="http://jakir.me" target="_new">jakir Hussain</a></li>
-  <li><a href="#">Mamun Khondokar target="_new"</a></li>
+  <li><a href="#" target="_new">Mamun Khondokar</a></li>
 </ul>
 </html>
