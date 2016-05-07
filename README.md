@@ -5,7 +5,7 @@
 
 <h4>Special Thanks to</h4>
 <ul>
-  <li><a target="_blank" href="http://babar.im">Al-amin babar</a></li>
-  <li><a target="_blank" href="http://jakir.me">jakir Hussain</a></li>
-  <li><a target="_blank" href="#">Mamun Khondokar</a></li>
+  <li><a target="_new" href="http://babar.im">Al-amin babar</a></li>
+  <li><a target="_new" href="http://jakir.me">jakir Hussain</a></li>
+  <li><a target="_new" href="#">Mamun Khondokar</a></li>
 </ul>
