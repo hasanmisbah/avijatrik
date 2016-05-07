@@ -1,3 +1,4 @@
+<html>
 <h1>Avijatrik</h1>
 <h2>Custom Theme For Monthly magazine named "avijatrik"</h2>
 
@@ -5,7 +6,8 @@
 
 <h4>Special Thanks to</h4>
 <ul>
-  <li><a target="_new" href="http://babar.im">Al-amin babar</a></li>
-  <li><a target="_new" href="http://jakir.me">jakir Hussain</a></li>
-  <li><a target="_new" href="#">Mamun Khondokar</a></li>
+  <li><a href="http://babar.im" target="_new">Al-amin babar</a></li>
+  <li><a href="http://jakir.me" target="_new">jakir Hussain</a></li>
+  <li><a href="#">Mamun Khondokar target="_new"</a></li>
 </ul>
+</html>
