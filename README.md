@@ -3,6 +3,8 @@
 <h2>Custom Theme For Monthly magazine named "avijatrik"</h2>
 
 <p>I am wxcited on this project Because it my first professional work on wordpress theme. after i seen my code work,  but i really  don't know why my code  run or not :P</p>
+![Alt text](https://github.com/hasanmisbah/avijatrik/blob/master/screencapture.png "Full ScreenShot")
+
 
 <h4>Special Thanks to</h4>
 <ul>
