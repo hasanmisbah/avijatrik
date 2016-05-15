@@ -39,7 +39,7 @@
                         <div style="clear:both"></div>
                         
                         <div class="entry">
-                        <p><?php the_excerpt(); ?></p>
+                        
                         </div>
                         <?php endwhile; ?>
                         </li>

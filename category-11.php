@@ -1,5 +1,4 @@
 <?php
-02
 /**
 * Category Template
 */
@@ -12,6 +11,7 @@
 					<?php 
                         // Check if there are any posts to display
                         if ( have_posts() ) : ?>
+                        <?php $postcount = 0; ?>
                         
                         
                         <h2 class="list-header cat-title"><?php single_cat_title( '', true ); ?></h2>
@@ -33,14 +33,20 @@
                         <p><strong><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></strong></p>
 						<h5 class="author-info pull-left">বিভাগঃ <?php the_category(', ') ?></h5>
 					    <h5 class="author-info pull-right"><?php the_meta(); ?></h5>
-					    <div style="clear:both"></div>
+					    <div style="clear:both; margin-top:10px !important;"></div>
 					    <h5 class="fb-like pull-left"><div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></h5>
                         <div style="clear:both"></div>
                         <div style="clear:both"></div>
                         
                         <div class="entry">
-                        <p><?php the_excerpt(); ?></p>
+                        <?php if($counter==1) {
+                            the_content();
+                            } else {
+                                the_excerpt();
+                                }
+                                ?>
                         </div>
+                        <?php $postcount++;?>
                         <?php endwhile; ?>
                         </li>
                         
