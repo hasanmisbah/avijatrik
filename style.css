@@ -312,6 +312,32 @@ article > .single-line {
         font-weight: bold;
     }
     /* post*/
+    /*Social like*/
+    /* This gets Google to fall into place */
+.social {
+	font-size: 2px;
+}
+
+/* This gets Facebook to fall into place */
+.social .facebook {
+	vertical-align: top;
+	margin-left:-20px;
+}
+
+/* Set an optional width for your button wrappers */
+.social span {
+	display: inline-block;
+	width: 90px;
+	vertical-align: top;
+}
+
+/* Adjust the widths individually if you like */
+.social .google {
+	width: 75px;
+	margin-left: -20px;
+}
+    
+    /*end Social Like*/
     .thumbnail {
         margin-bottom: 0px !important;
     }
@@ -326,19 +352,19 @@ article > .single-line {
     /*Footer Area*/
     
 .centered-pills {
-    text-align: center
+    text-align: center;
 }
 .centered-pills ul.nav-pills {
-    display: inline-block
+    display: inline-block;
 }
 .centered-pills li {
-    display: inline
+    display: inline;
 }
 .centered-pills a {
-    float: left
+    float: left;
 }
 * html .centered-pills ul.nav-pills, *+html .centered-pills ul.nav-pills {
-    display: inline
+    display: inline;
 }
     
     
@@ -382,13 +408,11 @@ article > .single-line {
  list-style: none;
  margin: 0 0 0 0px;
  display:block;
- width:100%;
 }
 .custom #perfect-related_by-category li:first-child {
  margin-left: 0;
 }
 .custom , #perfect-related_by-category li a {
- display: block;
  font-size: 20px;
  line-height:25px;
  text-align: left;
@@ -472,12 +496,6 @@ article > .single-line {
 p{
     margin: 0px !important;
     }
-
-/*Facebook like button*/
-.fb-like{
-    margin-top:-10px !important;
-    }
-/*end Facebook Like*/
 
 
 /*Media query*/
