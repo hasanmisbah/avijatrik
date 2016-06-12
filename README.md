@@ -1,3 +1,6 @@
+
+[![build status](https://gitlab.com/hasanmisbah/avijatrik/badges/master/build.svg)](https://gitlab.com/hasanmisbah/avijatrik/commits/master)
+
 <html>
 <h1>Avijatrik</h1>
 <h2>Custom Theme For Monthly magazine named "avijatrik"</h2>
