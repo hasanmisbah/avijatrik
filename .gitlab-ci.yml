@@ -1,0 +1,4 @@
+curl -X POST \
+     -F token=TOKEN \
+     -F ref=REF_NAME \
+     https://gitlab.com/api/v3/projects/1191907/trigger/builds
