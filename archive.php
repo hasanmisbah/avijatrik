@@ -14,7 +14,7 @@
                         if ( have_posts() ) : ?>
                         
                         
-                        <h2 class="list-header cat-title"><?php single_cat_title( '', true ); ?></h2>
+                        <h2 class="list-header cat-title"><?php echo str_replace('name: ','',get_the_archive_title()); ?></h2>
                         
                         
                         <?php

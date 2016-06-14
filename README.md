@@ -1,4 +1,7 @@
 [![build status](https://gitlab.com/hasanmisbah/avijatrik/badges/master/build.svg)](https://gitlab.com/hasanmisbah/avijatrik/commits/master)
+[![Codecov](https://img.shields.io/codecov/c/github/codecov/example-python.svg?maxAge=2592000?style=flat-square)](https://gitlab.com/hasanmisbah/avijatrik)
+
+
 
 <html>
 <h1>Avijatrik</h1>

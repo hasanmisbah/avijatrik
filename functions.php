@@ -1,4 +1,5 @@
 <?php 
+require_once get_template_directory() .'/cs-framework/cs-framework.php';
 
 /*Navigations*/
 // Register Custom Navigation Walker
