@@ -1,6 +1,6 @@
 /*
-Theme name: Avijatrik
-Template URI: http://avijatrik.com
+Theme Name: Avijatrik
+Theme URI:: http://avijatrik.com
 Author: Hasan Misbah
 Author URI: http://hasanmisbah.github.io
 Version: 1.0
@@ -42,10 +42,8 @@ body {
 }
 .logo-img {
     margin-top:10px;
-    background-size: cover;
-    background-size: 100%;
     width: 620px;
-    height:120px;
+    height:100px;
     margin-left:-10px;
 }
 .slogan {
@@ -108,9 +106,7 @@ article ul li {
     list-style: none;
     margin-bottom: 10px;
 }
-/*article ul li:first-child, article ul li:nth-child(3) {
-    border-right: 2px solid lightgrey;
-}*/
+
 
 article ul li a {
     color: darkgreen;
@@ -136,29 +132,6 @@ li > a > p > strong {
 .fn a {
     color: darkgreen;
 }
-/*.foot-menu {
-    margin: 0px 0px 10px 0px;
-    display: block;
-    overflow: hidden;
-}
-.foot-menu ul {
-    margin: 0;
-    padding: 0;
-}
-.foot-menu li {
-    list-style: none;
-    display: inline;
-}
-.foot-menu li a {
-    font-size: 14px;
-    padding: 5px !important;
-    overflow: hidden;
-    color: #fff;
-}
-.foot-menu li a:hover {
-    background: white !important;
-    color: darkgreen;
-}*/
 .author-info {
     margin-top:10px !important;
     font-size:1.1em;
@@ -468,7 +441,6 @@ article > .single-line {
 
 /*read more*/
 .read{
-    background: #fff none repeat scroll 0 0;
     border: 1px solid #c2c7b8 !important;
     border-radius: 5px !important;
     color: #fff !important;
@@ -507,4 +479,27 @@ p{
 .posty-thumb img{
     width: 220px;
     height:150px;
+}
+
+/*new edited*/
+ul.media{
+    margin:0;
+    padding:0;
+}
+ul.media li{
+ display: block;
+}
+.fa{
+    line-height: 1.5;
+}
+.fa-ul>li {
+    
+    font-size: 20px;
+}
+
+.media-title{
+width: 100%;
+}
+.media .content-bg{
+    border:2px solid #e3e3e3;
 }
