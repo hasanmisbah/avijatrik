@@ -1,6 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--Dns Prefetching-->
+<!-- Amazon S3 -->
+<link rel="dns-prefetch" href="//s3.amazonaws.com">
+
+<!-- Google CDN -->
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+
+<!-- Microsoft CDN -->
+<link rel="dns-prefetch" href="//ajax.microsoft.com">
+<link rel="dns-prefetch" href="//ajax.aspnetcdn.com">
+
+<!-- CDN JS -->
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+<!-- Bootstrap CDN -->
+<link rel="dns-prefetch" href="//netdna.bootstrapcdn.com">
+
+<!-- Google Tag Manager -->
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+
+<!-- Google Analytics -->
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+
+<!-- Google Fonts -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<!-- Facebook -->
+<link rel="dns-prefetch" href="//connect.facebook.net">
+
+<!-- Google+ -->
+<link rel="dns-prefetch" href="//apis.google.com">
+
+<!-- Linkedin -->
+<link rel="dns-prefetch" href="//platform.linkedin.com">
+
+<!-- Twitter -->
+<link rel="dns-prefetch" href="//platform.twitter.com">
+<!--/Dns Prefetching-->
+
     <!-- Meta data -->
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +52,7 @@
 <?php if (have_posts()):while(have_posts()):the_post(); endwhile; endif;?>
 <meta property="fb:app_id" content="586399311511149" />
 <meta property="fb:admins" content="100001304943665 , 100004579593930" />
+<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/img/cover.jpg"/>
  
     <?php if (is_single()) { ?>
     <!-- Open Graph -->
@@ -43,7 +83,7 @@
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 <meta property="og:description" content="<?php bloginfo('description'); ?>" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="<?php if (function_exists('wp_get_attachment_thumb_url')) {echo wp_get_attachment_thumb_url(get_post_thumbnail_id($post->ID)); }?>" />
+<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/img/cover.jpg"/>
 
     <!-- Schema.org -->
 <meta itemprop="name" content="<?php bloginfo('name'); ?>"> 
@@ -72,12 +112,6 @@
 <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
 
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 <!-- Header Script -->
 <script src="https://apis.google.com/js/platform.js" async defer> {lang: 'bn'}</script>
 <script type="text/javascript">
@@ -187,6 +221,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
                 
     <!-- /navigation -->
+    <!--Mobile navigation-->
+    <!-- navigation -->
+    <div class="hidden-md hidden-sm hidden-lg conatiner-fluid nav-bg">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span style="color:#000;">সূচী </span>
+        <span style="color:#000;" class="fa fa-navicon"></span>
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+        <!--<span class="icon-bar"></span>-->
+      </button>
+    </div>
+
+        <?php
+            wp_nav_menu( array(
+                'menu'              => 'mobile_nav',
+                'theme_location'    => 'mobile_nav',
+                'depth'             => 1,
+                'container'         => 'nav',
+                'container_class'   => 'collapse navbar-collapse',
+                'container_id'      => 'bs-example-navbar-collapse-2',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );
+        ?>
+    </div>
+</nav>
+</div>
+</div>
+</div>
+                
+    <!-- /navigation -->
+    <!--/Mobile navigation-->
     <div class="container-fluid full-bg">
         <div class="container">
             <div class="row">

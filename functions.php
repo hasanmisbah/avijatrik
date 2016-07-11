@@ -1,6 +1,14 @@
 <?php 
 
-// Featured Image
+//conditional html5 shim to header
+function add_ie_html5_shim () {
+    echo '<!--[if lt IE 9]>';
+    echo '<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>';
+    echo '<![endif]-->';
+}
+add_action('wp_head', 'add_ie_html5_shim');
+
+
 //Featured Image Support
 add_theme_support( 'post-thumbnails' );
 
@@ -10,6 +18,7 @@ add_theme_support( 'post-thumbnails' );
 require_once('wp_bootstrap_navwalker.php');
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'avimag' ),
+    'mobile_nav' => __( 'ex mobile menu', 'avimag' ),
     'footer' => __( 'footer Menu', 'avimag' ),
 ) );
 
@@ -267,4 +276,5 @@ add_action('draft_to_publish', 'autoset_featured');
 add_action('new_to_publish', 'autoset_featured');
 add_action('pending_to_publish', 'autoset_featured');
 add_action('future_to_publish', 'autoset_featured');
+
 ?>

@@ -1,7 +1,6 @@
 </div>
 </div>
 </div>
-
 <!-- Footer -->
 <footer class="container-fluid footer-bg">
 <div class="container">

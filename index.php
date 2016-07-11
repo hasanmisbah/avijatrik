@@ -22,7 +22,7 @@
 						<article class="main-content content-bg">
 							<h3 class="list-header">প্রবন্ধ</h3>
 							<ul class="">
-							    <?php query_posts('cat=8&showposts=4'); while (have_posts()) : the_post(); ?>
+							    <?php query_posts('cat=9&showposts=4'); while (have_posts()) : the_post(); ?>
 								<li class="content-bg">
 									<p><strong><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></strong></p>
 									<div style="clear:both"></div>
@@ -42,6 +42,15 @@
                                 </div>
 					                
                                      <div style="clear:both"></div>
+                                     <div class="posty-thumb col-sm-3 pull-left">
+					  <?php if ( has_post_thumbnail() ) {
+					      
+              the_post_thumbnail( 'thumbnail', array( 'class' => 'img-responsive', 'pull-left','posty-img' ) );
+        } else { ?>
+          <img class="img-responsive pull-left" style="width: 220px; height:150px;"src="<?php bloginfo('template_directory'); ?>/img/cover.jpg" alt="<?php the_title(); ?>" />
+        <?php } ?>
+					  
+					</div>
                                      <?php the_excerpt(); ?>
 								</li>
 								<?php endwhile; ?>
@@ -71,6 +80,15 @@
                                 </div>
 					                
 					                <div style="clear:both"></div>
+					                <div class="posty-thumb col-sm-3 pull-left">
+					  <?php if ( has_post_thumbnail() ) {
+					      
+              the_post_thumbnail( 'thumbnail', array( 'class' => 'img-responsive', 'pull-left','posty-img' ) );
+        } else { ?>
+          <img class="img-responsive pull-left" style="width: 220px; height:150px;"src="<?php bloginfo('template_directory'); ?>/img/cover.jpg" alt="<?php the_title(); ?>" />
+        <?php } ?>
+					  
+					</div>
 									<?php the_excerpt(); ?>
 								</li>
 								<?php endwhile; ?>
@@ -100,6 +118,15 @@
                                 	</span>
                                 </div>
                                      <div style="clear:both"></div>
+                                     <div class="posty-thumb col-sm-3 pull-left">
+					  <?php if ( has_post_thumbnail() ) {
+					      
+              the_post_thumbnail( 'thumbnail', array( 'class' => 'img-responsive', 'pull-left','posty-img' ) );
+        } else { ?>
+          <img class="img-responsive pull-left" style="width: 220px; height:150px;"src="<?php bloginfo('template_directory'); ?>/img/cover.jpg" alt="<?php the_title(); ?>" />
+        <?php } ?>
+					  
+					</div>
 									<?php the_excerpt(); ?>
 								</li>
 								<?php endwhile; ?>
