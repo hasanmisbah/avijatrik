@@ -1,6 +1,14 @@
 </div>
 </div>
 </div>
+
+
+<!--Publications-->
+<?php if ( is_home() ) { ?>
+<?php get_template_part( 'publication' ); ?>
+<?php } ?>
+<!--Publications-->
+
 <!-- Footer -->
 <footer class="container-fluid footer-bg">
 <div class="container">

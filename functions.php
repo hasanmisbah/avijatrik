@@ -84,6 +84,8 @@ function wpb_widgets_init() {
 		'before_title' => '<p class="header-text">',
 		'after_title' => '</p>',
 	) );
+	
+
 	}
 
 add_action( 'widgets_init', 'wpb_widgets_init' );
@@ -255,6 +257,12 @@ add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt');
 add_theme_support( 'post-formats', array(
 		'image', 'video', 'audio',
 	) );
+	
+function mytheme_setup() {
+	// Enable Theme support for Post Formats
+	add_theme_support( 'post-formats', array( 'image', 'video', 'audio', ) );
+}
+add_action( 'after_setup_theme', 'mytheme_setup' );
 
 
 // For Setup Thumbnail
