@@ -28,6 +28,14 @@
 	) );
 	
 	
+		// Set up the WordPress core custom background feature.
+		
+	    add_theme_support( 'custom-background', apply_filters( 'revelar_custom_background_args', array(
+		'default-color' => 'ffffff',
+		'default-image' => '',
+	    ) ) );
+	
+	
 	require('theme-config.php'); // some pre configuration
 
 ?>
