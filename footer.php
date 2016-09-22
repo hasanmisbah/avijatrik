@@ -21,6 +21,7 @@
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/bootstrap-dropdownhover.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/slider.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=107006924103075519093"></script>
 

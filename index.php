@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 <?php get_sidebar(); ?>
+
+
 				<!-- main content -->
-				<div class="col-lg-6 col-md-6 col-sm-6">
+				<div class="col-lg-6 col-md-6 col-sm-6">	
+					
 					<!-- Editor Note -->
 						<content class="content-bg">
 							<article class="editor-note">
@@ -17,7 +20,7 @@
                                 <?php endwhile; ?>
 							</article>
 						</content>
-						<!-- /editor note -->
+						<!-- /editor note -->	
 					<!-- 2x2 Post -->
 						<article class="main-content content-bg">
 							<h3 class="list-header">প্রবন্ধ</h3>

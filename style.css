@@ -523,3 +523,29 @@ p{
 .fix{
     clear:both;
 }
+
+
+
+
+.slider{
+    
+}
+.latest-post{
+    display: block;
+    background-color: #fff !important;
+    width: 100% !important;
+    padding: 20px;
+}
+.latest-post li {
+    list-style-type: circle;
+    list-style-position: inside;
+    margin: 10px 10px !important;
+}
+.latest-post li a {
+    padding: 10px !important;
+}
+.latest-post li a:hover{
+    background-color: #008080 !important;
+    border-radius: 5px;
+    text-decoration: none !important;
+}
