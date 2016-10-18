@@ -5,6 +5,7 @@
 
 <!--Publications-->
 <?php if ( is_home() ) { ?>
+  <?php require( 'framework/components/external.php' ); ?>
   <?php get_template_part( 'framework/components/publication' ); ?>
 <?php } ?>
 <!--Publications-->
@@ -24,7 +25,9 @@
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/slider.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=107006924103075519093"></script>
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script type="text/javascript" src="https:////cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://cdn.rawgit.com/justinforce/jquery-sameheight/master/jquery.sameheight.js"></script>
 <?php wp_footer(); ?>
 
 <!--analytics-->

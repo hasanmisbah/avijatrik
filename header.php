@@ -16,6 +16,7 @@
     <link href="<?php bloginfo('template_directory'); ?>/css/animate.min.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/css/share.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/css/slider.css" rel="stylesheet">
+    <link href="<?php bloginfo('template_directory'); ?>/css/flex.css" rel="stylesheet">
     <link href="<?php bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
 
 
@@ -94,35 +95,31 @@
     get_template_part('framework/components/top-nav');      // adding top navigation
     get_template_part('framework/components/mobile-nav');   // adding navigation for mobile user
 ?>
-
-<div class="container">
+<?php if ( is_home() ) { ?>
+<div class="container-fluid content-bg hidden-xs desktop-slider">
+    <div class="container">
 	<div class="row">
 		<div class="col-md-8">
 			
 			<!-- slider -->
 						
-						<?php if ( is_home() ) { ?>
+						
                           <?php get_template_part( 'framework/components/slider' ); ?>
-                        <?php } ?>
+                        
 						
 						<!-- /slider -->
 			
 		</div>
 		
-		<div class="col-md-4">
-		    <ul class="latest-post">
-		        <li><a href="">Post one</a></li>
-		        <li><a href="">post two</a></li>
-		        <li><a href="">post 3</a></li>
-		        <li><a href="">post 4</a></li>
-		        <li><a href="">post 5</a></li>
-		        <li><a href="">post 6</a></li>
-		        <li><a href="">post 7</a></li>
-		    </ul>
+		<div class="col-sm-4">
+		    <?php
+		        get_template_part('framework/components/slide-side'); // sidebar right side
+		    ?>
 		</div>
 	</div>
 </div>
-
+</div>
+<?php } ?>
 
 
     <div class="container-fluid full-bg">
