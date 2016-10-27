@@ -488,8 +488,8 @@ p{
 }
 .widget-post img, .widget-post h3 {
     display: inline;
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 80px;
+    max-height: 80px;
 }
 .widget-post a img{
     margin-right: 8px;
@@ -638,21 +638,26 @@ p{
 
 
 /*external block*/
-
+.external-area{
+    margin-top:8px;
+    border-top:5px solid #999;
+    border-bottom:5px solid #999;
+    margin-bottom: -10px;
+}
 .post-card{
   padding: 18px;
   margin-bottom:10px;
   display:block;
   overflow: hidden;
-  border-bottom: 2px solid #e3e3e3;
-  min-height:220px;
+  border: 2px solid #e3e3e3;
+  min-height:240px;
 }
 .post-card h2{
   text-align:center;
   font-size: 25px;
 }
 .post-card img {
-    max-height: 80px;
+    max-height: 120px;
     max-width:100%;
     margin-right:auto;
     margin-left: auto;
@@ -664,5 +669,8 @@ p{
 }
 .post-card a:hover{
     text-decoration: none;
+}
+.card-area{
+    padding:10px;
 }
 /*external block*/
