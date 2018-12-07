@@ -27,7 +27,7 @@
 <script type="text/javascript" async defer src="https://apis.google.com/js/platform.js?publisherid=107006924103075519093"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script type="text/javascript" src="https:////cdnjs.cloudflare.com/ajax/libs/masonry/3.1.5/masonry.pkgd.min.js"></script>
-<script type="text/javascript" src="https://cdn.rawgit.com/justinforce/jquery-sameheight/master/jquery.sameheight.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/justinforce/jquery-sameheight/jquery.sameheight.js"></script>
 <?php wp_footer(); ?>
 
 <!--analytics-->
